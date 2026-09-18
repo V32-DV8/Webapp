@@ -1,4 +1,4 @@
-# Building AurumTask as Android APK
+# Building v32 task as Android APK
 
 ## Complete Guide to Convert Your Web App to Android
 
@@ -40,7 +40,7 @@ npx cap init
 ```
 
 When prompted:
-- **App name:** AurumTask
+- **App name:** v32 task
 - **App ID:** com.aurumtask.app (or your preferred package name)
 - **Web directory:** dist
 
@@ -88,7 +88,7 @@ In Android Studio:
 
 #### b) Update App Name
 - Edit `android/app/src/main/res/values/strings.xml`
-- Change `<string name="app_name">AurumTask</string>`
+- Change `<string name="app_name">v32 task</string>`
 
 #### c) Configure Splash Screen (Optional)
 - Install Capacitor Splash Screen plugin:
@@ -213,7 +213,7 @@ cd android
 ### Issue: App crashes on launch
 **Solution:** Check `adb logcat` for errors:
 ```bash
-adb logcat | grep "AurumTask"
+adb logcat | grep "v32 task"
 ```
 
 ### Issue: White screen on launch

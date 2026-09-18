@@ -68,7 +68,7 @@ export default function Sidebar() {
             >
               <Sparkles className="w-4 h-4 text-black" />
             </motion.div>
-            <span className="font-bold text-lg gold-text-gradient">AurumTask</span>
+            <span className="font-bold text-lg gold-text-gradient">v32 task</span>
           </div>
           <button onClick={toggleSidebar} className="lg:hidden p-1 hover:bg-white/5 rounded-lg">
             <X className="w-5 h-5 text-aurum-secondary" />
@@ -230,16 +230,20 @@ export function Header() {
   const [searchFocused, setSearchFocused] = useState(false);
 
   return (
-    <header className="h-14 border-b border-white/5 bg-[#080808]/80 backdrop-blur-md flex items-center px-4 gap-4 sticky top-0 z-30">
-      <button onClick={toggleSidebar} className="p-2 hover:bg-white/5 rounded-lg lg:hidden">
-        <Menu className="w-5 h-5 text-aurum-secondary" />
+    <header className="h-14 border-b border-aurum-gold/20 gold-gradient flex items-center px-4 gap-4 sticky top-0 z-30">
+      <button onClick={toggleSidebar} className="p-2 hover:bg-black/10 rounded-lg lg:hidden">
+        <Menu className="w-5 h-5 text-black" />
       </button>
+      
+      <div className="flex items-center gap-2">
+        <span className="font-bold text-lg text-black">v32 task</span>
+      </div>
 
       <motion.div
         animate={{ width: searchFocused ? 400 : 280 }}
         className="relative hidden sm:block"
       >
-        <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-aurum-muted" />
+        <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-black/60" />
         <input
           type="text"
           value={searchQuery}
@@ -247,7 +251,7 @@ export function Header() {
           onFocus={() => setSearchFocused(true)}
           onBlur={() => setSearchFocused(false)}
           placeholder="Search tasks... (⌘K)"
-          className="w-full pl-9 pr-4 py-2 bg-white/5 border border-white/5 rounded-xl text-sm text-aurum-text placeholder:text-aurum-muted focus:outline-none focus:border-aurum-gold/30 focus:bg-white/[0.07] transition-all"
+          className="w-full pl-9 pr-4 py-2 bg-black/10 border border-black/20 rounded-xl text-sm text-black placeholder:text-black/60 focus:outline-none focus:border-black/40 focus:bg-black/15 transition-all"
         />
       </motion.div>
 
@@ -257,16 +261,16 @@ export function Header() {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         onClick={() => setShortcutsOpen(true)}
-        className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/5 border border-white/5 text-xs text-aurum-muted hover:text-aurum-secondary hover:border-white/10 transition-colors"
+        className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-black/10 border border-black/20 text-xs text-black/70 hover:text-black hover:bg-black/20 transition-colors"
       >
         <span>⌘</span><span>K</span>
       </motion.button>
 
       <motion.div
         whileHover={{ scale: 1.05 }}
-        className="w-8 h-8 rounded-full gold-gradient flex items-center justify-center cursor-pointer"
+        className="w-8 h-8 rounded-full bg-black flex items-center justify-center cursor-pointer"
       >
-        <span className="text-xs font-bold text-black">AT</span>
+        <span className="text-xs font-bold text-aurum-gold">v32</span>
       </motion.div>
     </header>
   );

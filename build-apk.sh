@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# AurumTask APK Build Script
+# v32 task APK Build Script
 # Usage: ./build-apk.sh [debug|release]
 
 set -e
@@ -13,7 +13,7 @@ NC='\033[0m'
 
 echo -e "${GOLD}"
 echo "  ╔══════════════════════════════════════╗"
-echo "  ║     ⚡ AurumTask APK Builder ⚡      ║"
+echo "  ║     ⚡ v32 task APK Builder ⚡       ║"
 echo "  ╚══════════════════════════════════════╝"
 echo -e "${NC}"
 

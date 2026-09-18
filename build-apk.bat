@@ -1,5 +1,5 @@
 @echo off
-REM AurumTask APK Build Script for Windows
+REM v32 task APK Build Script for Windows
 REM Usage: build-apk.bat [debug|release]
 
 setlocal enabledelayedexpansion
@@ -9,7 +9,7 @@ if "%BUILD_TYPE%"=="" set BUILD_TYPE=debug
 
 echo.
 echo   ========================================
-echo       AurumTask APK Builder
+echo       v32 task APK Builder
 echo   ========================================
 echo.
 

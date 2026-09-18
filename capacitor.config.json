@@ -1,6 +1,6 @@
 {
   "appId": "com.aurumtask.app",
-  "appName": "AurumTask",
+  "appName": "v32 task",
   "webDir": "dist",
   "server": {
     "androidScheme": "https"
